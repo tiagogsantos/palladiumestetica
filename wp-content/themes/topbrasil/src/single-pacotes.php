@@ -4,17 +4,15 @@
 
 <?php the_post(); ?>
 
+<script type="text/javascript">
+    alert('Eu sou um teste');
+</script>
+
     <section class="home-pacotes sidebar-section">
         <div class="container">
             <div class="flex flex-parent">
                 <div class="col">
                     <div class="top">
-                        <br/>
-                        <h1 class="title-princ strong text-blue"><?= the_title(); ?></h1>
-                        <br/>
-                        <p><?= the_field('briefing_h1'); ?></p>
-                        <br/><br/>
-
                         <div class="flex align-center pacotes-two">
                             <div class="pacote-img">
                                 <h1 class="title-princ strong text-blue"><?= the_title(); ?></h1>

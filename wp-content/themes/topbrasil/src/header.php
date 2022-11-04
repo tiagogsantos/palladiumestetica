@@ -32,10 +32,11 @@
             <?php if (is_front_page()): ?>
                 <a href="#"><h1 class="h1-logo"
                                 style="background: url(<?= get_field('logo_do_site', 'theme-options') ?>) no-repeat center center;">
-                        Top Brasil Agência de Viagens</h1></a>
+                        Palladium Estetica</h1></a>
             <?php else: ?>
                 <div class="col">
-                    <a href="<?php bloginfo('url') ?>"><img src="<?= get_field('logo_do_site', 'theme-options') ?>"
+                    <a href="<?php bloginfo('url') ?>">
+                        <img src="<?= get_field('logo_do_site','theme-options') ?>"
                                                             alt="Top Brasil"></a>
                 </div>
             <?php endif; ?>

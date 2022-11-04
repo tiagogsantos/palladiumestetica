@@ -4,7 +4,7 @@
 
 <?php include 'inc/search-top.php'; ?>
 
-<?php include 'inc/banner-novo.php'; ?>
+<?php //include 'inc/banner-novo.php'; ?>
 
 <?php include 'inc/home-pacotes.php'; ?>
 
