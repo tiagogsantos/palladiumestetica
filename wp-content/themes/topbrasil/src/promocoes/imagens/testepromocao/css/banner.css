@@ -1,0 +1,155 @@
+p.titulo {font-size: 50px; font-weight: bold; text-transform: uppercase; font-family: sans-serif;}
+
+p.cafe {color: #ffffff; font-size: 22px;}
+
+span.endereco {color: #ffffff; font-size: 18px;}
+
+.motivos {color: #ffffff;}  
+
+span.motivos {font-size: 25px; font-family: sans-serif; margin-left: 2%; position: absolute;}
+
+img.img-responsive {width: 7%;}
+
+h2 {color: #36538f;}
+
+.observacoes {background-color: #efefef;}
+
+footer#footer {background-color: #36538f;}
+
+span.apartir {font-size: 19px;}
+
+p.diasealimentacao {font-size: 17px; margin-top: 3%;}
+
+p.validade {margin-top: -3%; font-size: 17px;}
+
+p.motivos {color: #ffffff; font-size: 18px;} 
+
+h3.motivos {color: #ffffff; margin-top: 5%}
+
+span.precobanner {color: orange; font-size: 45px; font-weight: bold;}
+
+p.divisores {margin-top: 40px; font-size: 30px}
+
+p.baixo {font-size: 41px; margin-top: 20px;}
+
+p.dianoite {color: #ff9f1c; font-size: 22px; margin-top: 20px;}
+
+.mySlides {display: none;}
+
+.button-primary {color: #fff; background-color: orange; border-color: #88b04b; text-transform: uppercase;}
+
+img.logo {margin-top: 3%; margin-left: 8%; z-index: 9999; position: absolute;}
+
+button.botao {display: inline-block; min-width: 185px; padding: 9px 20px; font-size: 12px; line-height: 21px;
+border-radius: 30px; font-weight: 900; text-align: center; vertical-align: middle; touch-action: manipulation;
+cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap;
+text-transform: uppercase; transition: .3s ease-out;}
+
+p.diasqtd {margin-top: 11%; font-weight: 900;}
+
+/* Slideshow container */
+.slideshow-container {max-width: 100%; position: relative; margin: auto;}
+
+
+.text {color: #f2f2f2; position: absolute; text-align: left; margin-top: -32%; 
+margin-left: 8%;}
+
+/* Fading animation */
+.fade {-webkit-animation-name: fade; -webkit-animation-duration: 3.5s; animation-name: fade; 
+animation-duration: 3.5s;}
+
+
+@media (max-width: 375px) { 
+
+.text {margin-top: -40% !important;}
+
+p.titulo {font-size: 20px;}
+
+span.precobanner {font-size: 19px; font-weight: bold !important;}
+
+p.divisores {font-size: 12px; margin-top: 1%;}
+
+p.baixo {font-size: 12px; margin-top: 2px; font-weight: bold !important;}
+
+.responsivoimage {height: 160px;}
+
+p.dianoite {font-size: 16px; margin-top: 0px; font-weight: bold !important;}
+
+button.botao {line-height: 15px; margin-top: 8px;}
+
+img.imagemresponsiva {max-width: 100%; height: 152px;}
+
+img.logo {}
+
+ }
+
+@media (max-width: 414px) { 
+
+.text {margin-top: -36%;}
+
+p.titulo {font-size: 20px; margin-top: 8%;}
+
+span.precobanner {font-size: 19px; font-weight: bold !important;}
+
+p.divisores {font-size: 12px; margin-top: 1%;}
+
+p.baixo {font-size: 17px; margin-top: -5%; font-weight: 800 !important;}
+
+.responsivoimage {height: 160px;}
+
+p.dianoite {font-size: 16px; margin-top: 0px; font-weight: 900 !important;}
+
+button.botao {line-height: 15px; margin-top: 8px;}
+
+img.imagemresponsiva {max-width: 100%; height: 220px;} 
+
+img.logo {width: 30%;}
+
+}
+
+@media (max-width: 360px) { 
+
+.text {margin-top: -41%;}
+
+p.titulo {font-size: 18px; margin-top: 19%;}
+
+span.precobanner {font-size: 19px;}
+
+p.divisores {font-size: 12px; margin-top: 1%;}
+
+p.baixo {font-size: 15px; margin-top: -8%;}
+
+.responsivoimage {height: 160px;}
+
+p.dianoite {font-size: 16px; margin-top: 0px;}
+
+button.botao {line-height: 15px; margin-top: 8px;}
+
+img.imagemresponsiva {max-width: 100%; height: 170px;}
+
+img.logo {width: 30%;}
+
+}
+
+
+
+@media (max-width: 320px) { 
+
+.text {margin-top: -46%;}
+
+p.titulo {font-size: 15px; margin-top: 20%;}
+
+span.precobanner {font-size: 19px;}
+
+p.divisores {font-size: 12px; margin-top: 1%;}
+
+p.baixo {font-size: 15px; margin-top: -9%;}
+
+.responsivoimage {height: 160px;}
+
+p.dianoite {font-size: 16px; margin-top: 0px;}
+
+button.botao {line-height: 15px; margin-top: 8px;}
+
+img.imagemresponsiva {max-width: 100%; height: 152px;} } 
+

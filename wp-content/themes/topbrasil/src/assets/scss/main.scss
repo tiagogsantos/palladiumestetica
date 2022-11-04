@@ -1,0 +1,54 @@
+// Cores
+@import 'core/reset';
+@import 'core/fonts';
+@import 'core/colors';
+@import 'core/vars';
+@import 'core/mixins';
+@import 'core/helpers';
+@import 'core/boot';
+
+// Modules
+@import 'modules/header';
+@import 'modules/top-menu';
+@import 'modules/search-top';
+@import 'modules/banner-home';
+@import 'modules/home-pacotes';
+@import 'modules/menu-pacotes';
+@import 'modules/box-pacotes';;
+@import 'modules/pacotes-destaque';
+@import 'modules/call-banner';
+@import 'modules/intens-infos';
+@import 'modules/footer-newsletter-blog';
+@import 'modules/footer';
+
+// Components
+@import 'components/breadcrumb';
+@import 'components/input-button';
+
+// Pages
+@import 'pages/contato';
+@import 'pages/category';
+@import 'pages/listagens';
+@import 'pages/detalhe';
+@import 'pages/pacotes';
+@import 'pages/satisfacao';
+@import 'pages/reserva';
+@import 'pages/blog';
+@import 'pages/quem-somos';
+@import 'pages/404';
+@import 'pages/contato-depoimento';
+
+// Responsive
+@import 'responsive/header';
+@import 'responsive/contato';
+@import 'responsive/blog';
+@import 'responsive/banner';
+@import 'responsive/home-pacotes';
+@import 'responsive/depoimentos';
+@import 'responsive/pacotes';
+@import 'responsive/footer-newsletter';
+@import 'responsive/footer';
+@import 'responsive/detalhe';
+@import 'responsive/quem-somos';
+@import 'responsive/reserva';
+@import 'responsive/satisfacao';

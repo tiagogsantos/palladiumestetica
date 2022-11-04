@@ -1,0 +1,190 @@
+
+//Layout Padrão para 2 Pacotes
+.pacotes-two{
+  .pacote-box{
+    max-width: 436px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &:hover{
+      img{
+        max-width: none;
+        width: 110%;
+        transition: width linear .4s;
+      }
+    }
+
+    .pacote-img{
+      position: relative;
+      height: 230px;
+    }
+
+    img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transition: width linear .4s, max-width 0s .4s;
+      transform: translate(-50% , -50%);
+    }
+
+    .pacote-desc{
+      position: relative;
+      min-height: 187px;
+      padding: 30px 20px 20px;
+      box-sizing: border-box;
+      color: $branco;
+
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: solid transparent 33px;
+      }
+    }
+
+    .pacote-title{
+      @include font-size(20px);
+      font-weight: $bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .pacote-content{
+      @include font-size(14px);
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .pacote-btn{
+      align-self: flex-end;
+    }
+
+    .btn-transparent{
+      @include font-size(13px);
+    }
+
+    &:first-child{
+      background: $cor-pacote-1;
+
+      .pacote-desc{
+        background: $cor-pacote-1;
+
+        &:before{
+          border-bottom-color: $cor-pacote-1;
+        }
+      }
+    }
+
+    &:nth-child(2){
+      background: $cor-pacote-2;
+
+      .pacote-desc{
+        background: $cor-pacote-2;
+
+        &:before{
+          border-bottom-color: $cor-pacote-2;
+        }
+      }
+    }
+  }
+}
+
+//Layout Padrão para 3 Pacotes
+.pacotes-three{
+  overflow: hidden;
+  border-radius: 6px;
+
+  .pacote-box{
+    position: relative;
+    min-height: 365px;
+    width: calc(100% / 3);
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &:hover{
+      .pacote-img img{
+        width: 110%;
+        max-width: 110%;
+        transition: width linear .4s;
+      }
+    }
+
+    .pacote-img{
+      position: absolute;;
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+
+      img{
+        width: 100%;
+        height: auto;
+        transition: width linear .4s, max-width 0s .4s;
+      }
+    }
+
+    .pacote-desc{
+      position: relative;
+      width: 100%;
+      min-height: 70px;
+      padding: 14px 18px 18px;
+      box-sizing: border-box;
+      color: $azul;
+      background: rgba($cor-pacote-transparente, .8);
+
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: solid transparent 18px;
+        border-bottom-color: rgba($cor-pacote-transparente, .8);
+      }
+    }
+
+    .pacote-title{
+      @include font-size(20px);
+      font-weight: $bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .pacote-content{
+      @include font-size(14px);
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .pacote-price{
+      color: $cinza;
+
+      .price-box{
+        color: $azul;
+        font-weight: $bold;
+        @include font-size(25px);
+        margin-left: 5px;
+      }
+    }
+
+    .pacote-btn{
+      align-self: flex-end;
+    }
+
+    .btn-transparent{
+      @include font-size(13px);
+      color: $cor-btn-pacote-three;
+      border-color: $cor-btn-pacote-three;
+    }
+  }
+}

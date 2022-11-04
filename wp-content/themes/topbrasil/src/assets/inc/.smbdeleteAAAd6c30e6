@@ -1,0 +1,18 @@
+<div class="home-banner">
+	<?php $loop = new WP_Query( array( 'post_type' => 'banner', 'posts_per_page' => -1, 'order' => 'ASC') ); ?>
+
+	<ul class="owl-carousel-banner">
+
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+		<li>
+			<div class="m_banner" data-slide-title="<?= get_the_title() ?>" data-slide="<?php the_post_thumbnail_url() ?>" style="height: 520px; background: url(<?php the_post_thumbnail_url() ?>) no-repeat center center;">
+			</div>
+		</li>
+
+	<?php endwhile; wp_reset_query(); ?>
+
+	</ul>
+
+
+</div>

@@ -1,0 +1,22 @@
+// Function calcula rem
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+// Mixin converte px para rem
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+// Cria transparencia em hexadecimal
+@mixin background-opacity($color, $opacity: 0.5) {
+	background-color: $color;
+	background-color: rgba($color, $opacity);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}

@@ -1,0 +1,20 @@
+@media (max-width:1100px){
+section.detail-content {
+  .flex-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &>.col:last-child{
+      margin-left: 0;
+    }
+  }
+}
+}
+
+@media (max-width: 490px) {
+section.detail-content {
+  #destaque-gallery {
+    min-height: 200px;
+  }
+}
+}

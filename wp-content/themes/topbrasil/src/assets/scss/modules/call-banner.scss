@@ -1,0 +1,94 @@
+.call-banner{
+	.banner-content{
+		height: 362px;
+		position: relative;
+    background-size: cover !important;
+	}
+
+	.call-legend {
+	    width: 100%;
+	    height: 97px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    // background: rgba($azul-2 ,.83);
+	    opacity: 0;
+	    padding: 0 30px;
+
+	    &.call-name {
+		    color: $branco;
+		    @include font-size(40px);
+		    background: rgba($azul-2 ,.60);
+		}
+	}
+
+	.call-price {
+		text-align: right;
+	    color: $branco;
+	    @include font-size(12px);
+
+	    .call-value{
+	    	display: block;
+	    	@include font-size(28px);
+	    }
+	}
+
+	.call-number {
+	    position: absolute;
+	    left: -12px;
+	    top: 0;
+	    width: calc(100% + 24px);
+	    height: 58px;
+	    text-align: center;
+	    @include font-size(35px);
+	    color: $branco;
+	    background: $azul-2;
+	    padding: 0 40px;
+	    display: flex;
+	    justify-content: center;
+
+	    &:before {
+	    	content: "";
+	    	display: block;
+	    	position: absolute;
+	    	border: 6px solid transparent;
+	    	border-right-color: $azul-6;
+	    	border-top-color: $azul-6;
+	    	left: 0;
+	    	bottom: -12px;
+	    }
+
+	    &:after {
+	    	content: "";
+	    	display: block;
+	    	position: absolute;
+	    	border: 6px solid transparent;
+	    	border-left-color: $azul-6;
+	    	border-top-color: $azul-6;
+	    	right: 0;
+	    	bottom: -12px;
+	    }
+
+	    .fa {
+		    @include font-size(27px);
+		    width: 38px;
+		    height: 38px;
+		    margin-right: 10px;
+		    background: #fe7d29;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    border-radius: 100%;
+		}
+
+		strong{
+			margin-right: 5px;
+		}
+	}
+
+}
+
+//*  CUSTOM CSS PASSAGENS AÉREAS  *//
+.call-banner.page-pass{
+	margin-bottom: 35px;
+}

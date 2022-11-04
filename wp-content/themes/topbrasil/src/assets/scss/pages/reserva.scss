@@ -1,0 +1,215 @@
+.page-reserva {
+  h1 {
+    text-transform: uppercase;
+    @include font-size(35px);
+    color: $azul;
+    font-weight: 700;
+    margin-top: 39px;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    @include font-size(25px);
+    color: $laranja-2;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .linha-form {
+    display: flex;
+    width: 100%;
+
+    .col-form:first-child {
+      width: 24.58%;
+    }
+
+    .col-form:last-child {
+      width: 75.42%;
+      position: relative;
+    }
+
+    strong,span {
+      display: flex;
+      align-items: center;
+      height: 55px;
+      width: 100%;
+      padding-left: 24px;
+      @include font-size(14px);
+      color: $cinza-42;
+      border-bottom: solid 1px $cinza-43;
+      position: relative;
+    }
+    span {
+      background: $cinza-17;
+    }
+    strong {
+      background: $cinza-22;
+    }
+  }
+
+  input, textarea, select {
+    display: inline-block;
+    width: 306px;
+    height: 31px;
+    border: none;
+    border-bottom: solid 3px $cinza-34;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-family: $font;
+    @include font-size(14px);
+    color: $cinza-44;
+    font-weight: 500;
+  }
+
+  .sep {
+    display: inline-block;
+    height: 3px;
+    width: 51px;
+    background: $cinza-45;
+    margin: 0 8px;
+    border-radius: 100px;
+  }
+
+  .input-icon {
+    position: relative;
+
+    i {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+    }
+  }
+
+  .inserir-adulto, .inserir-crianca {
+    font-weight: 500;
+    color: $cinza-11;
+    @include font-size(13px);
+    position: absolute;
+    right: 18px;
+    top: 15px;
+
+    i {
+      font-size: 20px;
+      position: relative;
+      top: 3px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.form-principal-reserva {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 90px;
+  background: $cinza-17;
+  padding: 23px 22px;
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(19px);
+    color: $cinza-11;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .campos-reserva {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    &:last-child { margin-bottom: 0; }
+
+    input:nth-child(1) {
+      width: 100%;
+      max-width: 218px;
+    }
+
+    input:nth-child(2) {
+      width: 100%;
+      max-width: 258px;
+    }
+
+    input:nth-child(3) {
+      width: 100%;
+      max-width: 258px;
+    }
+
+    input:nth-child(4) {
+      width: 100%;
+      max-width: 181px;
+    }
+
+    input:nth-child(5) {
+      width: 100%;
+      max-width: 265px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 875px;
+      // max-width: 555px;
+      height: 91px;
+      padding: 10px;
+      resize: inherit;
+    }
+
+    // .captcha-def {
+    //   width: 320px;
+    //   padding: 5px 8px;
+    //   border-bottom: solid 3px #d9d9d9;
+    // }
+
+    button {
+      width: 100%;
+      max-width: 263px;
+      height: 89px;
+      background: $laranja-9;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: $branco;
+      @include font-size(16px);
+      font-weight: 700;
+      border-radius: 5px;
+      transition: all  ease .5s;
+
+      &:hover, &:focus {
+            background: #4CAF50;
+      }
+    }
+  }
+}
+
+.lbl {
+  opacity: .4;
+}
+
+.original {
+  .lbl {
+    opacity: 1;
+  }
+}
+
+
+.select {
+  position: relative;
+
+  i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
+}
+
+.span-data {
+  position: relative;
+
+  .fa {
+        left: -21px;
+        position: relative;
+  }
+}

@@ -1,0 +1,130 @@
+.pacotes-menu{
+  padding: 20px 0 10px;
+  background: $cinza-4;
+  border-radius: 0 0 3px 3px;
+  border: solid 1px $cinza-2;
+  position: relative;
+  z-index: 0;
+
+  &>li{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    &:hover .sub-menu{
+      // display: block;
+      opacity: 1;
+      visibility: visible;
+      max-height: 500px;
+      transition: all linear .4s;
+    }
+
+    &:hover > a{
+      color: $branco;
+      transition: all linear .2s;
+      border-bottom-color: $laranja;
+
+      &:before{
+        background: $laranja;
+        width: calc(100% + 50px);
+        transition: all linear .2s;
+      }
+    }
+
+    &>a{
+      position: relative;
+      display: block;
+      padding: 10px 20px 10px 0;
+      color: $cinza;
+      @include font-size(14px);
+      font-weight: $bold;
+      line-height: 18px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-top: solid 1px transparent;
+      border-bottom: 1px solid $cinza-5;
+      transition: all linear .2s;
+
+      &:before{
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0;
+        min-height: 38px;
+        height: calc(100% + 1px);
+        width: calc(100% + 40px);
+        background: transparent;
+        border-radius: 0 3px 3px 0;
+        transition: all linear .2s;
+        z-index: -1;
+      }
+
+      &:after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: FontAwesome;
+        content: "\f078";
+      }
+    }
+  }
+
+  .sub-menu{
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all linear .4s;
+
+    li{
+      position: relative;
+
+      &:before{
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        height: 26px;
+        width: calc(100% + 40px);
+        transform: translateY(-50%);
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 0 3px 3px 0;
+        transition: all linear .2s;
+      }
+
+      &:hover:before{
+        width: calc(100% + 50px);
+        background: $branco;
+        border-color: $cor-borda-azul;
+        transition: all linear .2s;
+      }
+
+      &:hover a{
+        color: $azul;
+        transition: all linear .2s;
+      }
+    }
+
+    a{
+      position: relative;
+      display: block;
+      padding: 10px 0;
+      color: $cinza;
+      font-weight: normal;
+      @include font-size(12px);
+      transition: all linear .2s;
+
+      &:before {
+        @include font-size(10px);
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "\f054";
+        margin-right: 10px;
+      }
+    }
+  }
+}

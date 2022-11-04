@@ -1,0 +1,47 @@
+header{
+  padding: 10px 0 35px;
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .h1-logo{
+    width: 163px;
+    height: 95px;
+  }
+
+  .flex-parent{
+    &>.col:first-child{
+      max-width: 165px;
+    }
+
+    &>.col:last-child{
+      max-width: 895px;
+    }
+  }
+
+  .top-phones{
+    max-width: 100%;
+    margin-left: auto;
+    margin-bottom: 27px;
+
+    .mobile-phone , .mobile-box-phone {
+      display: none;
+    }
+
+    .desk-phone {
+      display: block;
+    }
+
+    a{
+      @include font-size(15px);
+      color: $laranja;
+      font-weight: $semibold;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@media (max-width: 920px) {
+  .contato-page {
+    .flex {
+      display: block;
+    }
+
+    .col {
+      max-width: 100%!important;
+    }
+
+    .contact-content {
+      .col:first-child {
+          max-width: 70px!important;
+      }
+    }
+  }
+
+  section.contato-page #contact-page-form .fa {
+    position: absolute;
+  }
+
+  .in-no-style {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 470px) {
+  section.contato-page .tel-list a {
+    font-size: .8rem;
+  }
+
+  section.contato-page p, section.contato-page a {
+    font-size: .8rem;
+  }
+
+  section.contato-page #contact-page-form {
+    padding: 17px 10px;
+    min-height: 471px;
+  }
+
+  section.contato-page .form-legend {
+    margin-top: 0px;
+  }
+
+  .msg-def {
+    height: 145px;
+  }
+
+  section.contato-page #contact-page-form textarea {
+    height: 115px;
+  }
+
+  .breadcrumb-back {
+    display: none;
+  }
+}

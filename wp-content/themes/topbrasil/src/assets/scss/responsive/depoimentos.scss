@@ -1,0 +1,78 @@
+@media (max-width: 670px) {
+  .call-banner .call-number .fa {
+    font-size: 1.1rem;
+    width: 28px;
+    height: 28px;
+  }
+
+  .call-banner .call-number {
+    font-size: 1.1rem;
+  }
+
+  .call-banner .banner-content {
+    height: 250px;
+  }
+
+  .call-banner .call-legend.call-name {
+    font-size: 1.5rem;
+  }
+
+  .page-list-items li {
+    display: block!important;
+  }
+
+  .page-list-items li>.col:first-child {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  section.page-list.depoimentos-list .sub-title {
+    margin-bottom: 13px;
+  }
+
+  .page-list-items .btn-list {
+    margin-top: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+  .call-banner .banner-content {
+    height: 57px;
+  }
+
+  .call-banner .call-number {
+    padding: 0 10px;
+  }
+
+  .call-banner .call-legend.call-name {
+    display: none;
+  }
+
+  .call-banner .call-number strong {
+    display: none;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  
+  .call-banner .call-number .fa-phone {
+    position: relative;
+    top: 2px;
+  }
+
+  .call-banner .call-number .open-font {
+        font-size: 15px;
+  }
+
+  section.page-list.depoimentos-list .sub-title {
+    font-size: 18px;
+  }
+
+  .page-list-items p,section.page-list .page-content p {
+    font-size: .7rem;
+  }
+
+  .title-princ {
+    font-size: 1.5rem;
+  }
+}

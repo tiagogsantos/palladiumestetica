@@ -1,0 +1,217 @@
+.top-nav{
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $cor-separador;
+  }
+
+  #menu-menu-principal , #menu-menu-principal-mobile {
+    &>.menu-item-has-children{
+      &>.sub-menu{
+        &>li{
+          width: calc(100% / 3 - 10px);
+          margin-right: 15px;
+        }
+
+        &>li:nth-child(3n+3){
+          margin-right: 0;
+        }
+      }
+    }
+
+    &>li{
+      &>.sub-menu {
+        transform: perspective(1000px) rotateX(-90deg);
+        transition: all .4s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+        transform-origin: 50% 0;
+        opacity: 0;
+      }
+      &:hover{
+        &>.sub-menu {
+          //transition-delay: .6s;
+          transform: perspective(1000px) rotateX(0deg);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  li{
+    //position: relative;
+
+    &:hover{
+      .sub-menu{
+        max-height: 700px;
+        transition: all linear .7s;
+      }
+    }
+  }
+
+  a{
+    position: relative;
+    display: block;
+    color: $cinza;
+    @include font-size(16px);
+    font-weight: $semibold;
+    padding: 15px 3px;
+  }
+
+  li.active , li:hover , li.current-menu-item{
+    a{
+      color: $azul;
+      //font-weight: $bold;
+
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $azul;
+      }
+    }
+  }
+
+  li.divisor {
+    width: 1px;
+    height: 20px;
+    display: block;
+    background: $cor-separador;
+
+    &:last-child{
+      display: none;
+    }
+  }
+
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    top: calc(100% - 3px);
+    background: #f7f7f7;
+    z-index: 10;
+    border: none;
+    transition: all linear .7s;
+
+    li {
+      transition: all linear .3s;
+      &>a{
+        border-bottom: solid 1px $azul-13;
+      }
+
+      a {
+        @include font-size(12px);
+        color: $branco;
+        padding: 10px 20px;
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+      }
+
+      a:after {
+        display: none;
+      }
+
+      &>a:hover{
+        background: darken($azul, 20%);
+        transition: all linear .3s;
+      }
+    }
+
+    .menu-item-has-children {
+      .sub-menu {
+        transition: all linear .7s;
+        position: relative;
+        display: block;
+        //background: $azul-14;
+      }
+
+      &:hover .sub-menu {
+        //max-height: 450px;
+        transition: all linear .7s;
+      }
+
+      &:hover {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.top-nav .sub-menu li>a {
+    display: block;
+    border-bottom: solid 1px #dad7d7!important;
+    color: #36538f;
+    font-size: 14px;
+    padding: 10px!important;
+}
+
+.top-nav .sub-menu li>a:hover {
+    background: #e8e8e8;
+}
+
+.top-nav .sub-menu li .sub-menu {
+  padding: 7px;
+}
+
+.top-nav .sub-menu li .sub-menu li>a {
+    color: #3c3636;
+    font-weight: 400;
+    border: none !important;
+    padding: 7px !important;
+    font-size: 12px;
+
+    &:before {
+       content: "\f105";
+       display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      margin-right: 4px;
+    }
+}
+
+.top-nav .sub-menu li a {
+  padding: 0;
+  height: auto;
+  min-height: auto;
+}
+
+.top-nav #menu-menu-principal>.menu-item-has-children>.sub-menu>li , .top-nav #menu-menu-principal-mobile>.menu-item-has-children>.sub-menu>li {
+  width: auto;
+  margin: 0;
+}
+.top-nav .sub-menu {
+  padding: 20px 10px;
+}
+
+.top-nav .sub-menu {
+  justify-content: space-between;
+}
+
+.top-nav > .menu-menu-principal-container > ul > .menu-item-has-children > a , .top-nav > .menu-mobile > .menu-menu-principal-mobile-container > ul > .menu-item-has-children > a {
+  position: relative;
+
+  &:before {
+       content: "\f107";
+       display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+          font-size: 14px;
+    margin-left: 4px;
+    right: -11px;
+    position: absolute;
+    }
+}

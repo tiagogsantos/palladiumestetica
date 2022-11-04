@@ -1,0 +1,55 @@
+section.banner-home{
+	.item-carousel{
+		width: 100%;
+		height: 505px;
+	}
+
+	.owl-nav {
+	    display: none;
+	}
+
+	.owl-dots {
+	    position: absolute;
+	    right: calc((100% - 1200px) / 2);
+	    bottom: 35px;
+	}
+
+	.owl-dot {
+	    position: relative;
+	    display: inline-block;
+	    width: 27px;
+	    height: 27px;
+	    border-radius: 100%;
+	    background: transparent;
+	    margin: 0 5px;
+	    transition: all linear .3s;
+
+	    span {
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50% , -50%);
+		    width: 18px;
+		    height: 18px;
+		    background: #fff;
+		    border-radius: 100%;
+		    transition: all linear .3s;
+		}
+
+		&:hover , &.active{
+		    background: #fff;
+		    transition: all linear .3s;
+
+			span {
+			    background: #fe7d29;
+			    transition: all linear .3s;
+			    display: block;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-50% , -50%);
+			    width: 14px;
+			    height: 14px;
+			}
+		}
+	}
+}

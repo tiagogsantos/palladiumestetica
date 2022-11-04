@@ -1,0 +1,39 @@
+﻿ITENS TOP BRASIL
+
+(Thyago) - Menu topo / sub-menu
+(Cliente) - Itens nos ligamos para você
+(Cliente) - WhatsApp
+(Cliente) - Chat online
+(Ayres) OK - Resultados de busca topo
+OK - Combo banners home
+OK - Limite itens blog
+(Ayres) OK- Banners dinâmicos no blog
+OK -- Bradcrumb
+OK - Menu footer
+OK - Botões sociais rodapé
+OK - Nova listagem de categorias
+(Ayres) - OK Número do Pacote
+(Thyago) - Depoimentos
+(Ayres) - OK - Listagem de pacotes “Veja mais” dentro do post
+(Thyago) - Fonts de conteúdo (Open Sans) para itens da importação
+OK - Mascara telefones
+(Ayres) - Botão na tabela de valores por pessoa
+(Ayres) - Integração formulário de orçamento
+(Thyago) - Botões sociais
+(Ayres) - Indique a um amigo
+
+(Ayres) - Paginação de Pacotes
+OK - Logo H1
+OK - Menu Ativo
+
+=====
+
+VALIDAÇÃO LAYOUT/ FRONT
+
+(Thyago) - Rever todas as páginas
+
+=====
+
+RESPONSIVO
+
+- Todas as páginas

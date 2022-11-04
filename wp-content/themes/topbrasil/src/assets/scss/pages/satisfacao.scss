@@ -1,0 +1,133 @@
+form#contact-page-form.satisfacao-form{
+    max-width: 670px;
+    margin: 40px auto 0;
+    padding: 36px 40px;
+
+  .btn-def-form{
+    width: 100%;
+    height: 70px;
+    border: none;
+    @include font-size(14px);
+    color: $branco;
+    background: $laranja-2;
+    border-radius: 3px;
+    margin-top: 20px;
+
+    .fa{
+      color: $branco;
+      @include font-size(31px);
+    }
+
+    &.uploaded-images{
+      background: #68bb34;
+    }
+  }
+
+  .bt-file-sat {
+    width: calc(25% - 60px / 4);
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+
+    &.uploaded-image {
+      height: 150px;
+      background: transparent;
+    }
+
+    .fa {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .fa-star , .fa-star-o{
+    margin-right: 5px;
+  }
+
+  p{
+    @include font-size(16px);
+    color: $branco;
+    font-weight: $medium;
+    margin-bottom: 10px;
+  }
+
+  .label-radio{
+    @include font-size(13.5px);
+    color: $branco;;
+    font-weight: $medium;
+
+    &:before{
+        margin-right: 10px;
+    }
+  }
+
+  .stars-list-form{
+    margin-left: 15px;
+  }
+
+  hr{
+    border: none;
+    border-top: 1px solid $azul-8;
+  }
+
+  .msg-def{
+    height: 110px;
+    margin-top: 17px;
+
+    textarea{
+      height: 80px;
+    }
+  }
+
+  .form-legend{
+    @include font-size(12px);
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  .btn-two-colors{
+    border-radius: 3px;
+  }
+
+  li:last-child{
+    margin-bottom: 0;
+  }
+
+  li{
+    margin-bottom: 15px;
+  }
+
+  .form-rate{
+      margin-top: 25px;
+    p{
+        margin-top: 17px;
+    }
+  }
+
+  .item-msg{
+      margin-bottom: 26px;
+    p{
+        font-weight: normal;
+        margin-top: 24px;
+    }
+  }
+
+  .images-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: 250px;
+    overflow: hidden;
+
+    img {
+      height: auto !important;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+}

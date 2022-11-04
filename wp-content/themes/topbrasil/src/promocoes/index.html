@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Top Brasil Turismo</title>
+
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <link rel="stylesheet" href="css/jquery.datepicker2.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/banner.css">
+
+</head>
+
+<body>
+
+    <img class="logo" src="imagens/logo.png">
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img loading="lazy" class="imagemresponsiva" src="imagens/banner.png" data-lazy-src="imagens/banner.png" />
+            <noscript><img class="imagemresponsiva" src="imagens/banner.png" alt="" /></noscript>
+
+            <div class="text animated bounceInUp">
+
+                <p class="titulo">Viaje no Brasil e pelo mundo!</p>
+
+                <p class="baixo"><span>Aproveite as nossas ofertas imperdíveis!</span> </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <section id="col-3-tours">
+        <div class="container">
+            <div class="trending-tour__tittle">
+
+                <div class="section-tittle">
+                    <h1>Pacotes de Viagens em Promoção</h1>
+                    <hr>
+
+                </div>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+
+            <h2>Pacotes Promocionais para o Nordeste</h2>
+            <hr>
+
+            <div class="row">
+
+                <hr>
+
+                <div class="col-md-8">
+
+                    <p class="contem">Com aéreo, hotel, traslados, passeios e hospedagem grátis para crianças</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <img class="imagem-responsive" src="imagens/cartao.png">
+
+                </div>
+
+            </div>
+            <br/>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">a partir de 10x:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort</h3>
+
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/serhs-natal.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Serhs Natal Resort
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">R$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="col-3-tours">
+        <div class="container">
+
+            <h2>Pacotes de Viagens Internacionais em Promoção</h2>
+
+           <div class="row">
+
+                <hr>
+
+                <div class="col-md-8">
+
+                    <p class="contem">Pacotes com aéreo, hotel, traslados, passeios e seguro viagem</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <img class="imagem-responsive" src="imagens/cartao.png">
+
+                </div>
+
+            </div>
+            <br/>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Nova York
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                          Nova York
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Nova York
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Nova York
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Nova York</h3>
+
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+
+                    <a href="tour-item.html" class="trending-tour-item">
+
+                        <div class="trending-tour-item__sale"></div>
+
+                        <img class="trending-tour-item__thumnail" src="imagens/nova-york.png" alt="tour1">
+
+                        <div class="trending-tour-item__info">
+
+                            <h3 class="trending-tour-item__name">
+
+                            Nova York
+
+                        </h3>
+                            <div class="trending-tour-item__group-infor">
+
+                                <div class="trending-tour-item__group-infor--left">
+                                    <div class="trending-tour-item__group-infor__lasting">
+
+                                        <span class="apartir">A partir de:</span>
+
+                                        <span class="trending-tour-item__group-infor__price">US$ 850,00</span>
+
+                                        <p class="diasealimentacao">7 dias com pensão completa</p>
+
+                                        <p class="validade">Preço válido para saída 17/05</p>
+
+                                        <button class="botao button-primary">Eu Quero!</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h3 class="motivos">7 Motivos para viajar com a Top Brasil</h3>
+
+                    <ul class="motivos">
+                        <li>Mais de 50 mil passageiros embarcados em 19 anos</li>
+                        <li>Eleita entre as 5 melhores agências do Brasil</li>
+                        <li>Site com mais de 2000 pacotes para todas as partes do mundo</li>
+                        <li>Preços competitivos e pagamento facilitado em até 10 parcelas sem juros</li>
+                        <li>Clientes altamente satisfeitos</li>
+                        <li>Consultores especializados</li>
+                        <li>Plantão 24 horas durante a sua viagens.</li>
+                    </ul>
+                    <p class="motivos"></p>
+                </div>
+
+                <div class="col-md-6">
+
+                    <h3 class="motivos">Compre com agilidade sem sair de casa!</h3>
+
+                    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511946036617">
+
+                        <img class="img-responsive" src="imagens/whatsapp.png">
+
+                        <span class="motivos">(11) 94603-6617</span></a>
+
+                    <br/>
+                    <br/>
+
+                    <a href="tel:1155766300">
+
+                        <img class="img-responsive" src="imagens/telefone-icone.png">
+
+                        <span class="motivos">SP (11) 5576-6300</span> </a>
+
+                    <br/>
+                    <br/>
+
+                    <a href="mailto:contato@topbrasiltur.com.br">
+
+                        <img class="img-responsive" src="imagens/email-topbrasil1.png">
+
+                        <span class="motivos">contato@topbrasiltur.com.br</span></a>
+                    <br/>
+                    <br/>
+
+                    <p class="cafe">Se preferir venha tomar um café conosco</p>
+
+                    <span class="endereco">Rua Vergueiro 2045/14º andar - Vila Mariana - São Paulo/SP</span>
+                    <br/>
+
+                    <span class="endereco"> 2º a 6º feira, das 08h30 as 19h00 e sábado das 09h00 às 13h </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="observacoes">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <br/>
+
+                    <h3>Observações Importantes:</h3>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/jquery.datepicker2.js"></script>
+
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

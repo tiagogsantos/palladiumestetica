@@ -1,0 +1,58 @@
+.contact-dep{
+  h1{
+    @include font-size(28px);
+    font-weight: bold;
+    color: $azul;
+    margin-bottom: 20px;
+  }
+
+  .page-content{
+    margin-bottom: 30px;
+  }
+
+  .in-def{
+    height: auto;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    input{
+      height: 31px;
+      margin-left: 20px;
+    }
+
+    .fa{
+      color: $laranja-7;
+    }
+  }
+
+  .msg-def{
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+
+    textarea{
+      height: 78px;
+      margin-left: 20px;
+    }
+
+    .fa{
+      color: $laranja-7;
+    }
+  }
+
+  #contact-dep-form{
+    background: $azul-5;
+    padding: 35px 40px;
+    max-width: 910px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    &>.col{
+      max-width: calc(50% - 10px);
+    }
+  }
+}

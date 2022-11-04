@@ -1,0 +1,144 @@
+section.qs-page{
+  h1{
+    color: $azul;
+    @include font-size(28px);
+    margin-bottom: 25px;
+  }
+
+  .qs-infos{
+    max-width: 995px;
+    margin: 0 auto 20px;
+  }
+
+  .mission-box{
+    padding-top: 30px;
+    .qs-info-img{
+      max-width: 85px;
+      margin-right: 25px;
+      padding-top: 10px;
+    }
+  }
+
+  .qs-title-content{
+    margin-bottom: 15px;
+    color: $laranja-2;
+    @include font-size(28px);
+    font-weight: $medium;
+
+    strong{
+      font-weight: 800;
+    }
+  }
+
+  .qs-info-content{
+    .content{
+      @include font-size(15px);
+      color: $cinza-6;
+      font-weight: $medium;
+      line-height: 24px;
+
+      li{
+        margin-bottom: 5px;
+      }
+
+      li:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: $cinza-46;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .col-hr{
+    align-self: stretch;
+    width: 1px;
+    margin: 0 40px;
+    background: $cinza-13;
+  }
+
+  .min-container{
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
+  .qs-circle-box {
+    max-width: 715px;
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 70px;
+    margin: 70px 0 50px auto;
+    padding: 15px 25px 20px 55px;
+    border: solid 3px $cinza-48;
+    border-radius: 4px;
+
+    .circle-img {
+      position: absolute;
+      left: -105px;
+      top: -30px;
+      width: 135px;
+      height: 135px;
+      background: $azul-2;
+      border-radius: 100%;
+    }
+
+    .circle-title{
+      font-weight: $bold;
+      color: $laranja-2;
+      @include font-size(18px);
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+
+  .dep-link{
+    max-width: 335px;
+    min-height: 82px;
+    border-radius: 3px;
+    background: $laranja-2;
+    color: $branco;
+    line-height: 20px;
+    margin: 0 0 55px auto;
+
+    span{
+      max-width: 280px;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+}
+
+.qs-register-info{
+  padding: 55px 0;
+  background: $cinza-2;
+  
+  .qs-register-content{
+    &>.col:first-child{
+      max-width: 80px;
+      margin-right: 25px;
+    }
+
+    .fa{
+      @include font-size(42px);
+      color: $laranja-2;
+    }
+
+    &>.col:last-child{
+      p{
+        @include font-size(15px);
+        color: $cinza-6;
+        line-height: 24px;
+        font-weight: $medium;
+      }
+
+      .qs-register-title{
+        @include font-size(16px);
+        color: $azul;
+        line-height: 24px;
+        font-weight: $bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+/*
+ * BUTTONS
+ */
+
+// Transparent Button
+.btn-transparent{
+  color: $branco;
+  font-weight: $bold;
+  text-transform: uppercase;
+  border: solid 2px $branco;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 8px;
+}
+
+// Default Button
+.btn-def{
+  width: 100%;
+  color: $branco;
+  font-weight: $bold;
+  text-transform: uppercase;
+  background: $azul;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 8px;
+  border: none;
+  height: 40px;
+  transition: all ease .5s;
+  cursor: pointer;
+  &:hover, &:focus {
+        background: #f39438;
+  }
+}
+
+//Two Colors Button
+.btn-two-colors {
+  color: $branco;
+  background: linear-gradient(to bottom, $laranja-3 0%, $laranja-3 50%, $laranja-2 50%, $laranja-2 100%);
+  border: none;
+  width: 100%;
+  height: 43px;
+  @include font-size(16px);
+  transition: all ease .5s;
+
+  &:hover, &:focus {
+    background: linear-gradient(to bottom,#4CAF50 0,#4CAF50 50%,#367d38 50%,#367d38 100%);
+  }
+}
+
+//List Button
+.btn-list{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: $branco;
+  padding: 15px 20px;
+  @include font-size(14px);
+  border-radius: 3px;
+  background: $laranja;
+
+  &:hover, &:focus {
+    background: #4CAF50;
+  }
+
+  .fa{
+    margin-left: 10px;
+  }
+}
+
+//Table Button
+.btn-table{
+  width: 105px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: $laranja-3;
+  border-bottom: 3px solid $laranja-6;
+  color: $branco;
+  font-weight: $bold;
+  text-transform: uppercase;
+  @include font-size(14px);
+  transition: all ease .5s;
+
+
+  &:hover, &:focus {
+    background: #4CAF50;
+    border-bottom: 3px solid #215223;
+  }
+}
+
+//More Info Button
+.btn-more-info{
+  max-width: 390px;
+  border-radius: 3px;
+  overflow: hidden;
+  color: $branco;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  &:hover, &:focus {
+
+        .fa {
+          background: #3d8e41;
+        }
+
+        span {
+          background: #4caf50;
+        }
+  }
+
+  .fa{
+    display: flex;
+    width: 65px;
+    height: 65px;
+    @include font-size(34px);
+    background: $laranja-6;
+    transition: all ease .5s;
+  }
+
+  span{
+    height: 65px;
+    background: $laranja-3;
+    padding: 0 20px 0 10px;
+    font-weight: $bold;
+    @include font-size(20px);
+    text-transform: uppercase;
+    transition: all ease .5s;
+  }
+}
+
+/*
+ *  Inputs
+ */
+
+// Default Input
+.in-def{
+  width: 100%;
+  color: $azul;
+  font-weight: $medium;
+  @include font-size(14px);
+  background: $branco;
+  border-radius: 3px;
+  padding: 6px 8px;
+  border: none;
+  height: 30px;
+
+  @include placeholder{
+  	color: $azul;
+  }
+}
+.captcha-def{
+  width: 100%;
+  color: $azul;
+  font-weight: $medium;
+  @include font-size(14px);
+  background: $branco;
+  border-radius: 3px;
+  padding: 10px 8px;
+  border: none;
+
+  @include placeholder{
+  	color: $azul;
+  }
+}
+
+// No Style Input]
+.in-no-style{
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+/*
+ *  Textarea
+ */
+
+// Default Textarea
+.msg-def{
+  width: 100%;
+  color: $azul;
+  font-weight: $medium;
+  @include font-size(14px);
+  background: $branco;
+  border-radius: 3px;
+  padding: 6px 8px;
+  border: none;
+  height: 235px;
+
+  @include placeholder{
+  	color: $azul;
+  }
+}
+
+/*
+ * Radio
+ */
+.label-radio{
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include font-size(14px);
+  color: $cinza-15;
+
+  &:before{
+    content: "";
+    color: $laranja-3;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $cinza-3;
+    border-radius: 100%;
+    margin-right: 5px;
+    background: $cinza-17;
+  }
+}
+
+.no-check{
+  display: none;
+}
+
+.no-check:checked ~ .label-radio{
+  &:before{
+    content: "\f111";
+    font-family: FontAwesome;
+  }
+}
+
+/*
+ * Mensagem de Validação
+ */
+ form .yts-box-val span.error {
+   display: block;
+   position: absolute;
+   background: #fff;
+   bottom: calc(100% - 10px);
+   height: auto;
+   border: 1px solid;
+   width: auto;
+   padding: 3px 10px;
+   border-radius: 3px;
+   color: #989898;
+   font-size: 12px;
+ }
+
+ form .yts-box-val span.error:after {
+   content: "";
+   background: #fff;
+   width: 8px;
+   height: 8px;
+   display: block;
+   position: absolute;
+   transform: rotate(45deg);
+   border-right: solid 1px #989898;
+   border-bottom: solid 1px #989898;
+   bottom: -5px;
+ }

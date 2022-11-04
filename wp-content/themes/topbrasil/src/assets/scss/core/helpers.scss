@@ -1,0 +1,131 @@
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-around{
+	display: flex;
+	justify-content: space-around;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+}
+.flex-start{
+	display: flex;
+	justify-content: flex-start;
+}
+.flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+.flex-col{
+	display: flex;
+	flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.align-end{
+	align-items: flex-end;
+}
+.align-start{
+	align-items: flex-start;
+}
+
+.col , .bottom , .top , .middle{
+	width: 100%;
+	flex-shrink: 1;
+}
+
+.container{
+	width: 100%;
+	max-width: 1220px;
+	display: block;
+	padding: 0 10px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.space{
+	padding: 80px 0 70px 0;
+}
+
+.min-space{
+	padding: 30px 0px;
+}
+
+.top-min-space{
+	padding: 40px 0px 100px 0px;
+}
+
+.left {
+	float: left;
+}
+
+.upper-all{
+	text-transform: uppercase;
+	*{
+		text-transform: uppercase;
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+ul.ul-def{
+	li{
+		position: relative;
+		padding-left: 10px;
+		&:before{
+			content:"\f111";
+			font-family: FontAwesome;
+			@include font-size(5px);
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+hr.dashed{
+	opacity: .4;
+	border-top:  dashed 1px #000;
+}
+
+hr.vertical{
+	opacity: .3;
+	border: 0px;
+	border-right: solid 1px #000;
+	height: 180px;
+
+	@media screen and (max-width: 1080px){
+		display: none;
+	}
+}
+
+hr.vertical-dashed{
+	opacity: .4;
+	border: 0px;
+	border-right:  dashed 1px #000;
+}
+
+.plane-rotate:before {
+    transform: rotate(45deg);
+}

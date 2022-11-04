@@ -1,0 +1,29 @@
+.item-infos{
+  li{
+    border-radius: 3px;
+    overflow: hidden;
+    background: $cinza-4;
+    margin-bottom: 10px;
+
+    .fa{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font-size(25px);
+      color: $branco;
+      background: $azul-2;
+      margin-right: 15px;
+    }
+
+    p{
+      width: 100%;
+      text-align: left;
+    }
+
+    strong{
+      color: $azul-2;
+    }
+  }
+}

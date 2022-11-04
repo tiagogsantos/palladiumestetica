@@ -1,0 +1,32 @@
+section.banner-home{
+  @media (max-width: 1220px) {
+    .container, .banner-home-carousel, .owl-carousel-banner, .owl-item, .item-carousel{height: 420px !important;}
+
+    .item-carousel{background-size: cover !important;}
+
+    .owl-dots{
+      right: 10px;
+      bottom: 20px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .container, .banner-home-carousel, .owl-carousel-banner, .owl-item, .item-carousel{height: 380px !important;}
+  }
+
+  @media (max-width: 768px) {
+    .container, .banner-home-carousel, .owl-carousel-banner, .owl-item, .item-carousel{height: 280px !important;}
+  }
+
+  @media (max-width: 600px) {
+    .container, .banner-home-carousel, .owl-carousel-banner, .owl-item, .item-carousel{height: 230px !important;}
+
+    .owl-controls{
+      display: none;
+    }
+  }
+
+  @media (max-width: 490px) {
+    .container, .banner-home-carousel, .owl-carousel-banner, .owl-item, .item-carousel{height: 140px !important;}
+  }
+}

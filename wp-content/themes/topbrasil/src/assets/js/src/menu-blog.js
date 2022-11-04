@@ -1,0 +1,1 @@
+$(document).ready(function(){$('#menu-menu-blog').find('.menu-item').find('a').append('<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>')});

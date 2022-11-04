@@ -1,0 +1,267 @@
+section.pacotes-destaque{
+  .title-princ{
+    margin-bottom: 20px;
+  }
+  .pacotes-two-columns{
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    &>.col:first-child{
+      width: 100%;
+      max-width: 487px;
+      border-radius: 0;
+
+      .pacote-box{
+        max-width: 100%;
+      }
+
+      .pacote-img{
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    &>.col:last-child{
+      max-width: calc(100% - 487px);
+    }
+  }
+  .pacote-box{
+    overflow: hidden;
+
+    .pacote-img{
+      position: relative;
+      height: 230px;
+    }
+
+    &:hover{
+      img{
+        width: 110%;
+        max-width: 110%;
+        transition: all linear .4s;
+      }
+    }
+
+    img{
+      transition: all linear .4s;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      max-width: 100%;
+      height: auto;
+      transform: translate(-50% , -50%);
+    }
+
+    .pacote-desc{
+      position: relative;
+      min-height: 187px;
+      padding: 30px 20px 20px;
+      box-sizing: border-box;
+      color: $branco;
+
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: solid transparent 33px;
+      }
+    }
+
+    .pacote-title{
+      @include font-size(20px);
+      font-weight: $bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .pacote-content{
+      @include font-size(14px);
+      font-weight: normal;
+      width: 100%;
+    }
+
+    .pacote-btn{
+      align-self: flex-end;
+      width: 100%;
+
+      a{
+        display: block;
+        width: 100%;
+        max-width: 130px;
+      }
+    }
+
+    .btn-transparent{
+      @include font-size(13px);
+    }
+
+    &:first-child{
+      background: $verde;
+
+      .pacote-desc{
+        background: $verde;
+
+        &:before{
+          border-bottom-color: $verde;
+        }
+      }
+    }
+
+    &:nth-child(2){
+      background: $cor-pacote-2;
+
+      .pacote-desc{
+
+        &:before{
+          border-bottom-color: $cor-pacote-2;
+        }
+      }
+    }
+
+    .pacote-price{
+      @include font-size(14px);
+      font-weight: $medium;
+
+      .price-box{
+        @include font-size(25px);
+        font-weight: $bold;
+      }
+    }
+  }
+
+  .top{
+    .pacote-box{
+      height: 400px;
+      background: $azul-4;
+
+      &:hover{
+        img{
+          height: 110%;
+          width: auto;
+          transition: all linear .4s;
+        }
+      }
+
+      .pacote-desc{
+        background: $azul-4;
+        max-width: 353px;
+
+        &:before{
+          border-left-color: $azul-4;
+          right: -65px;
+          left: auto;
+          top: 50%;
+          transform: translateY(-50%);
+          border-bottom-color: transparent;
+          z-index: 1;
+        }
+      }
+
+      .pacote-img{
+        height: 100%;
+        max-width: 360px;
+        overflow: hidden;
+      }
+
+      img{
+        height: 100%;
+        width: auto;
+        max-width: none;
+        transition: all linear .4s;
+      }
+    }
+
+    .pacote-title{
+      margin-bottom: 15px;
+    }
+
+    .pacote-img{
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .pacote-btn{
+      align-self: flex-start;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+    }
+
+    .pacote-price{
+      margin-top: 20px;
+
+      .price-box{
+        display: block;
+      }
+    }
+  }
+
+  .bottom{
+    .pacote-img{
+      height: 187px;
+      width: 100%;
+      max-width: 175px;
+    }
+
+    .pacote-box{
+      background: $azul-2;
+
+      .pacote-desc{
+        background: $azul-2;
+      }
+    }
+
+    .pacote-title{
+      text-align: left;
+    }
+
+    .pacote-box:nth-child(2){
+      background: $azul-5;
+
+      .pacote-desc{
+        background: $azul-5;
+      }
+    }
+
+    .pacote-box:nth-child(2) .pacote-desc{
+      &:before{
+        border-right-color: $azul-5;
+      }
+    }
+
+    .pacote-box .pacote-desc{
+      padding: 20px;
+      &:before {
+        left: -65px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-bottom-color: transparent;
+        border-right-color: $azul-2;
+      }
+    }
+
+    .pacote-btn{
+      width: 100%;
+      margin-top: auto;
+
+      a{
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+    }
+
+    .pacote-price{
+      margin-top: 10px;
+
+      .price-box{
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+section.page-list{
+	.title-princ{
+		color: $azul;
+		margin-bottom: 15px;
+	}
+
+	hr{
+		margin: 25px 0;
+	}
+
+	.page-content{
+		p{
+		    line-height: 24px;
+			color: $azul;
+		}
+	}
+
+	&.depoimentos-list{
+		.sub-title{
+			font-size: 25px;
+		}
+	}
+}
+
+.page-list-items{
+	margin-top: 30px;
+
+	li{
+		padding: 40px 0;
+		border-bottom: 1px dotted $cinza-5;
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		.item-desc{
+			.item-infos-date{
+				margin-bottom: 10px;
+		    line-height: 25px;
+			}
+		}
+
+		&>.col:first-child{
+			max-width: 487px;
+			margin-right: 20px;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		&>.col:last-child{
+			max-width: 690px;
+		}
+	}
+
+	.sub-title{
+		margin-bottom: 0;
+	}
+
+	.btn-list{
+		max-width: 140px;
+	}
+}

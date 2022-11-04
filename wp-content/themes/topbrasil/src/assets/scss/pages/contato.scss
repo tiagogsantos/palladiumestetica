@@ -1,0 +1,122 @@
+section.contato-page{
+  padding-bottom: 50px;
+  .title-princ{
+    color: $cor-titulo;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 28px;
+  }
+
+  p , a{
+    color: $cinza-6;
+  }
+
+  .flex-parent{
+    &>.col:first-child{
+      max-width: 587px;
+    }
+
+    &>.col:last-child{
+      max-width: 485px;
+    }
+  }
+
+  .contact-content{
+    padding: 40px 0;
+
+    &.mail-content{
+
+    }
+
+    &>.col:first-child{
+      max-width: 80px;
+
+      .fa{
+        @include font-size(53px);
+        color: $laranja-2;
+      }
+    }
+
+    &>.col:last-child{
+      max-width: calc(100% - 80px);
+    }
+
+    &:nth-of-type(3){
+      border-top: 1px solid $cinza-5;
+      border-bottom: 1px solid $cinza-5;
+    }
+  }
+
+  .title-content{
+    @include font-size(16px);
+    color: $azul-5;
+    line-height: 24px;
+    font-weight: $bold;
+  }
+
+  .tel-list{
+    a{
+      line-height: 24px;
+    }
+
+    strong{
+      color: $laranja-2;
+    }
+  }
+
+  .address-content{
+    strong{
+      color: $laranja-2;
+    }
+  }
+
+  #contact-page-form{
+    padding: 27px 40px;
+    min-height: 610px;
+    margin-top: 10px;
+    background: $azul-5;
+
+    .yts-box-val{
+      width: 100%;
+    }
+
+    li{
+      margin-bottom: 20px;
+    }
+
+    .fa{
+      color: $laranja-2;
+      @include font-size(16px);
+      margin-right: 20px;
+    }
+
+    .in-def , .msg-def {
+      padding: 15px;
+    }
+
+    .in-def {
+      height: 43px;
+    }
+
+    textarea{
+      height: 205px;
+    }
+  }
+
+  .form-legend{
+    color: $branco;
+    @include font-size(16px);
+    margin-top: 40px;
+  }
+
+  .acf-map {
+  	width: 100%;
+  	height: 260px;
+  	border: $cinza-46 solid 1px;
+  	margin: 55px 0 15px;
+  }
+  .acf-map img {
+   max-width: inherit !important;
+  }
+
+}
